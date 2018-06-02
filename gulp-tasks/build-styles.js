@@ -40,17 +40,6 @@ gulp.task('style:gen', function(callback) {
         .on('end', browserSync.reload);
 });
 
-// gulp.task('style_components:replace', function(callback) {
-
-//     gulp.src(route.src.componentsStyles)
-//         .pipe(plumber())
-//         .pipe(flatten({ includeParents: 0}))
-//         .pipe(gulp.dest(route.build.style_components))
-//         .on('end', function(){
-//            callback();
-//         });
-// });
-
 gulp.task('style:build', function(cb) {
     runSequence('style:gen', cb);
 });

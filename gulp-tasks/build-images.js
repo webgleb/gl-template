@@ -4,9 +4,6 @@ var gulp = require('gulp'),
 	plumber = require('gulp-plumber'),
 	filter = require('gulp-filter'),
 	imagemin = require('gulp-imagemin'),
-	// imageminJpegtran     = require('imagemin-jpegtran'),
-	// pngquant             = require('imagemin-pngquant'),
-	// imageminOptipng      = require('imagemin-optipng'),
 	file = require('gulp-file'),
 	spritesmith = require('gulp.spritesmith'),
 	webp = require('gulp-webp');
@@ -28,7 +25,6 @@ gulp.task('images:opti', function () {
 			var name = file.path.substring(file.path.lastIndexOf(".") + 1, file.path.length).toLowerCase();
 			return name == 'svg' ? false : true;
 		}))
-		// .pipe(imagemin())
 		.pipe(gulp.dest(route.build.images));
 });
 gulp.task('images:build', function () {
@@ -38,7 +34,6 @@ gulp.task('images:build', function () {
 			var name = file.path.substring(file.path.lastIndexOf(".") + 1, file.path.length).toLowerCase();
 			return name == 'svg' ? false : true;
 		}))
-		// .pipe(imagemin())
 		.pipe(gulp.dest(route.build.images));
 });
 
