@@ -1,0 +1,120 @@
+// Variables
+//
+// Copy settings from this file into the provided `_custom.scss` to override
+// the Bootstrap defaults without modifying key, versioned files.
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+	// used for all theme
+
+	$alabaster:       #f8f8f8;
+	$cod-gray:        #111111;
+
+
+// Options
+// Spacing
+// Body
+	//
+	// Settings for the `<body>` element.
+
+	$body-bg:       $alabaster;
+	$body-color:    $cod-gray;
+
+// Links
+	//
+	// Style anchor elements.
+
+	$link-decoration:       underline;
+	$link-hover-decoration: none;
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+	// $grid-breakpoints: (
+	// 	xs: 0,
+	// 	sm: 576px,
+	// 	md: 768px,
+	// 	lg: 992px,
+	// 	xl: 1240px
+	// );
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+	// $container-max-widths: (
+	// 	md: 720px,
+	// 	lg: 960px,
+	// 	xl: (120rem + 2rem)
+	// );
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+	$grid-columns: 24;
+	$grid-gutter-width: 2rem;
+
+
+// Grid containers
+// Grid columns
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+	// $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+	// $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+	// $font-family-base:       $font-family-sans-serif;
+
+	// $font-size-base: 1.6rem; // Assumes the browser default, typically `14px
+	// $font-size-lg:   1.8rem;
+	// $font-size-sm:   1.4rem;
+
+	// $line-height-base: 1.5;
+
+	// $h1-font-size: 4rem;
+	// $h2-font-size: 3rem;
+	// $h3-font-size: 2.4rem;
+	// $h4-font-size: 2rem;
+	// $h5-font-size: 1.8rem;
+	// $h6-font-size: 1.6rem;
+
+	// $headings-margin-bottom: 0.75em;
+	// $headings-font-family:   "Viga";
+	// $headings-font-weight:   400;
+	// $headings-line-height:   1.2;
+	// $headings-color:         inherit;
+
+
+// Components
+// Tables
+// Buttons
+// Forms
+// Dropdowns
+// Z-index master list
+// Navs
+// Navbar
+// Pagination
+// Jumbotron
+// Form states and alerts
+// Cards
+// Tooltips
+// Popovers
+// Badges
+// Modals
+// Alerts
+// Progress bars
+// List group
+// Image thumbnails
+// Figures
+// Breadcrumbs
+// Carousel
+// Close
+// Code

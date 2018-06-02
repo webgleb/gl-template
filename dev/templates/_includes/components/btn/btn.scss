@@ -1,0 +1,79 @@
+@import "./_variables";
+
+// button reset
+button{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+// btn style
+.btn{
+    position: relative;
+    display: inline-flex;
+    font-weight: $btn-font-weight;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: $input-btn-border-width solid transparent;
+    font-family: inherit;
+    border-width: .2rem;
+    border-style: solid;
+    cursor: pointer;
+    outline: 0 !important;
+    transition-property: background-color, box-shadow, border-color, transform;
+    transition-duration: 200ms;
+    transition-timing-function: ease;
+    text-decoration: none !important;
+    text-align: center;
+    justify-content: center;
+    @include button-size(
+        $input-btn-padding-y,
+        $input-btn-padding-x,
+        $font-size-lg,
+        $input-btn-line-height,
+        $btn-border-radius
+    );
+    &:hover,
+    &:focus,
+    &:active{
+        // transform: scale(0.98);
+        box-shadow: none;
+    }
+    // colors
+    // states
+    &_up{
+        text-transform: uppercase;
+    }
+    &_full{
+        width: 100%;
+    }
+    // sizes
+    &_lg{
+        @include button-size($input-btn-padding-y-lg, $input-btn-padding-x-lg, $font-size-lg, $line-height-lg, $btn-border-radius-lg);
+        & > .icon{
+            &:first-child{
+                & + span{
+                    padding-left: 3.5rem;
+                }
+            }
+        }
+    }
+    &_sm{
+        @include button-size($input-btn-padding-y-sm, $input-btn-padding-x-sm, $font-size-sm, $input-btn-line-height-sm, $btn-border-radius-sm);
+        & > .icon{
+            &:first-child{
+                & + span{
+                    padding-left: 4rem;
+                }
+            }
+        }
+    }
+}
+// Future-proof disabling of clicks on `<a>` elements
+a.btn.disabled,
+fieldset[disabled] a.btn {
+  pointer-events: none;
+}
