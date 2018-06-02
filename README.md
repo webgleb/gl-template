@@ -8,19 +8,19 @@
 
 # Template documentation
 
-> [How to install start project?](template_documentation__install.md)
+> [How to install start project?](read/template_documentation__install.md)
 
-> [How to create components?](template_documentation__create-components.md)
+> [How to create components?](read/template_documentation__create-components.md)
 
-> [How to use loadComponent function?](template_documentation__loadcomponent.md)
+> [How to use loadComponent function?](read/template_documentation__loadcomponent.md)
 
-> [How to use PNG Sprites?](template_documentation__png-sprites.md)
+> [How to use PNG Sprites?](read/template_documentation__png-sprites.md)
 
-> [How to use resizer.js?](template_documentation__resizer-helper.md)
+> [How to use resizer.js?](read/template_documentation__resizer-helper.md)
 
-> [How to use toggle-blocks.js?](template_documentation__toggle-blocks-helper.md)
+> [How to use toggle-blocks.js?](read/template_documentation__toggle-blocks-helper.md)
 
-> [How to use form-group mixin?](template_documentation__c-forms.md)
+> [How to use form-group mixin?](read/template_documentation__c-forms.md)
 
 ---
 ## Avocode (trial) start 13.01.18
