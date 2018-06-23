@@ -10,9 +10,9 @@ gulp.task('create', function(){
     var scss_str = '.' + component_name + ' {}';
     var jade_str = 'mixin ' + component_name + '(data)\n\t.' + component_name;
 
-    fs.stat(components_dest + component_name + '.jade', function(err, stat) {
+    fs.stat(components_dest + component_name + '.pug', function(err, stat) {
         if(err == null) {
-            console.error('ERROR: ' + component_name + '.jade' + ' in already exist');
+            console.error('ERROR: ' + component_name + '.pug' + ' in already exist');
         } else {
             fs.stat(components_dest + component_name + '.scss', function(err, stat) {
                 if(err == null) {
@@ -20,7 +20,7 @@ gulp.task('create', function(){
                 } else {
                     file(component_name + '.scss', scss_str)
                         .pipe(gulp.dest(components_dest));
-                    file(component_name + '.jade', jade_str)
+                    file(component_name + '.pug', jade_str)
                         .pipe(gulp.dest(components_dest));
                     gulp.src('dev/scss/_includes/components/index.scss')
                         .pipe(insert.append('\n@import "../../../templates/_includes/components/' + component_name + "/" + component_name + '";'))
@@ -37,11 +37,11 @@ gulp.task('create:jade', function(){
     var components_dest = 'dev/templates/_includes/components/' + component_name + '/';
     var jade_str = 'mixin ' + component_name + '(data)\n\t.' + component_name;
 
-    fs.stat(components_dest + component_name + '.jade', function(err, stat) {
+    fs.stat(components_dest + component_name + '.pug', function(err, stat) {
         if(err == null) {
-            console.error('ERROR: ' + component_name + '.jade' + ' in already exist');
+            console.error('ERROR: ' + component_name + '.pug' + ' in already exist');
         } else {
-            file(component_name + '.jade', jade_str)
+            file(component_name + '.pug', jade_str)
                 .pipe(gulp.dest(components_dest));
         };
     });

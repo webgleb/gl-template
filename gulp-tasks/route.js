@@ -11,7 +11,8 @@ module.exports = function(){
 	route.main.assets          = route.main.build    + 's/';
 	// search develop files
 	route.src.pug              = route.main.src      + 'templates/';
-	route.src.pugFiles         = route.src.pug       + '**/*.jade';
+	route.src.pugFiles         = route.src.pug       + '**/*.pug';
+	route.src.pugPages         = route.src.pug       + '*.pug';
 	route.src.js               = route.main.src      + 'js/';
 	route.src.jsFiles          = route.src.js        + '**/*.js';
 	route.src.componentsJs     = route.src.js        + 'components/**/*.js';

@@ -3,7 +3,6 @@ var gulp = require('gulp'),
 	path = require('path'),
 	plumber = require('gulp-plumber'),
 	filter = require('gulp-filter'),
-	imagemin = require('gulp-imagemin'),
 	file = require('gulp-file'),
 	spritesmith = require('gulp.spritesmith'),
 	webp = require('gulp-webp');

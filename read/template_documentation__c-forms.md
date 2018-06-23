@@ -1,5 +1,5 @@
 
-## Recommended to build form-groups used component "c-forms.jade"
+## Recommended to build form-groups used component "c-forms.pug"
 
 Available Properties:
 
